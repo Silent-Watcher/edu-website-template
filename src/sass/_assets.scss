@@ -1,0 +1,72 @@
+#bg-asset-section {
+    background-image: url(../img/color-bg.png);
+    // background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 900px;
+    #asset {
+        .card{
+            // box-shadow: 1px 1px 20px 0px #3737374d;
+            // padding: 0!important;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            .card-header{
+               overflow: hidden;
+               img{
+                   transition: all .4s ease;
+                   &:hover{
+                       transform: scale(1.3) rotate(10deg);
+                   }
+               }
+            }
+            .card-body{
+                position: relative;
+                a{
+                    
+                    display: inline-block;
+                    font-weight: bold;
+                    margin: 42px 22px 0 0 ;
+                }
+                p{
+                    color: rgb(66, 66, 66);
+                    margin: 14px 34px 17px 54px;
+                    font-weight: bold;
+                }
+                span{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    position: absolute;
+                    color: #fff;
+                    &:nth-of-type(1){
+                        background-color:$doc-second-color ;
+                        top: -35px;
+                        right: 13px;
+                        border-radius: 5px 5px 0 0;
+                    }
+                    &:nth-of-type(2){
+                        background-color:rgb(136, 136, 136);
+                        border-radius: 0 0 5px 5px ;
+                        top: 0px;
+                        right: 13px;
+                    }
+                }
+                    
+                    
+                }
+                
+            }
+            .card-footer{
+                border-top: 1px solid #efefef;
+                text-align: center;
+                padding: 10px 10px 0 10px;
+                span{
+                    color: #919191;
+                    display: inline-block;
+                    margin-right: 15px;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }

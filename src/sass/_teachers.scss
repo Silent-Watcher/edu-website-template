@@ -1,0 +1,58 @@
+#teacher {
+  background-image: url("../img/e-bg.jpg");
+  .teacher-container {
+    text-align: center;
+    // .teacher-img{
+
+    // }
+    .teacher-content-wrapper {
+      background-color: rgba(255, 255, 255, 0.747);
+      z-index: 1;
+      border-radius: 5px;
+      height: 144px;
+      box-shadow:0px 4px 20px 3px #b4b4b4;
+      p {
+        font-size: 25px;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+      span {
+        font-size: 28px;
+        color: $doc-second-color;
+        font-weight: bold;
+        background-color: #efefefdc;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      a {
+        border: 1px solid $doc-second-color;
+        padding: 5px 10px;
+        border-radius: 3px;
+        background-color: $doc-second-color;
+        color: #fff;
+        transition: all 0.4s ease;
+        display: inline-block;
+        &:hover {
+          transform: scale(1.08);
+          color: #000;
+        }
+      }
+    }
+  }
+}
+@media (max-width:500px){
+    .teacher-content-wrapper{
+        p , span {
+            font-size: 17px!important;
+        }
+        a{
+            font-size: 15px!important;
+        }
+    }
+}
+#achivements{
+  background-color: #ffc412;
+  height: 200px;
+  padding: 50px;
+}

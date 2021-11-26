@@ -1,0 +1,26 @@
+.title{
+    h4{
+        padding: 80px;
+        span{
+            display: inline-block;
+         &::after{
+             content: '';
+             position: absolute;
+             width: 50%;
+             top: 11px;
+             right: -62px;
+             height: 3px;
+             background-color:$doc-second-color;
+         }
+         &::before{
+             content: '';
+             position: absolute;
+             width: 50%;
+             top: 11px;
+             left: -62px;
+             height: 3px;
+             background-color:$doc-second-color;
+         }
+        }
+    }
+ }

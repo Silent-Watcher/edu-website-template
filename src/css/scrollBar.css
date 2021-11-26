@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8a8a8a;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #a8a1a100;
+}
+/*# sourceMappingURL=scrollBar.css.map */

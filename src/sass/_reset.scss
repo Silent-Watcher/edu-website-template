@@ -1,0 +1,26 @@
+@font-face {
+    font-family:$doc-font-family;
+    src: url('#{$doc-font-address}#{$doc-font-family}.eot');
+    src: url('#{$doc-font-address}#{$doc-font-family}.eot?#iefix') format('embedded-opentype'),
+         url('#{$doc-font-address}#{$doc-font-family}.woff') format('woff'),
+         url('#{$doc-font-address}#{$doc-font-family}.ttf') format('truetype');
+        //  url('#{$doc-font-address}#{$doc-font-family}.svg#FontName') format('svg');
+    font-style: $doc-font-style;
+    font-weight:$doc-font-weight;
+}
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $doc-font-family;
+    scroll-behavior: smooth;
+}
+ol,ul{
+    li{
+        list-style: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+// css reset & font

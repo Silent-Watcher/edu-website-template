@@ -1,0 +1,102 @@
+#faq-wrapper {
+  background-image: url(../img/faq-bg.jpg);
+  // padding: 50px;
+  .faq-right {
+    padding: 30px;
+    // padding: 20px;
+    margin: 80px 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 0px #efefef;
+    background-color: #fff;
+    ul {
+      li {
+        margin-top: 25px;
+        margin-right: 50px;
+        &:last-of-type {
+          margin-bottom: 40px;
+        }
+
+        i {
+          font-size: 32px;
+          color: #6b6bff;
+          vertical-align: middle;
+        }
+        span {
+          color: #000;
+          font-size: 16px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        margin-bottom: 5px;
+        // display: inline-block;
+        p {
+          margin-right: 70px;
+          color: rgb(126, 126, 126);
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .faq-left {
+    margin: 80px 0;
+    border-radius: 10px;
+    // z-index: 10;
+    .tabs {
+      // overflow:hidden;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      .tab {
+        color: #fff;
+        background-color: royalblue;
+        overflow: hidden;
+        // border-radius: 5px 5px 0 0 ;
+        label {
+          padding: 10px;
+          background-color: rgb(56, 56, 56);
+          width: 100% !important;
+          display: block;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgb(70, 70, 70);
+          }
+          &::after {
+            content: "\276f";
+            float: left;
+            text-align: center;
+            transition: all 0.5s ease;
+          }
+        }
+        .tab-content {
+          height: 0 !important;
+          padding: 0;
+          transition: all 0.5s linear;
+          font-size: 16px;
+          background-color: #aaaaaa70;
+          line-height:25.6px ;
+        }
+        input {
+          display: none;
+          &:checked {
+            ~ .tab-content {
+              height: 100px !important;
+              padding: 15px;
+              overflow: auto;
+           
+            }
+            + label::after {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .faq-left{
+    margin-top: 20px!important;
+  }
+}
